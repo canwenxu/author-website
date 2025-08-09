@@ -89,3 +89,40 @@ footer .inner{ display:flex; justify-content:space-between; gap:16px; flex-wrap:
   text-transform: uppercase;
 }
 .buttons a.pre-order:hover { opacity: 0.92; }
+
+/* Bio layout */
+.bio-grid {
+  display: grid;
+  gap: clamp(18px, 2.5vw, 28px);
+  align-items: start;
+}
+
+/* Two columns on desktop; stacked on mobile */
+@media (min-width: 900px) {
+  .bio-grid {
+    grid-template-columns: 320px 1fr;
+  }
+}
+
+/* Headshot styles */
+.headshot {
+  margin: 0;
+}
+.headshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;        /* circular portrait */
+  object-fit: cover;
+  box-shadow: 0 6px 24px rgba(0,0,0,.08);
+}
+.headshot figcaption {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* Bio text */
+.bio-copy h1 { margin-top: 0; }
+.bio-copy p { margin: 0 0 14px; }
+
