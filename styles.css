@@ -56,3 +56,17 @@ img{ max-width:100%; height:auto; border-radius: 10px; }
 
 footer{ color:var(--muted); font-size:0.9rem; border-top:1px solid #eee; }
 footer .inner{ display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap }
+
+.buttons a.pre-order {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 14px 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.buttons a.pre-order:hover {
+  opacity: 0.9; /* subtle hover feedback */
+}
+
