@@ -111,6 +111,7 @@ footer .inner{ display:flex; justify-content:space-between; gap:16px; flex-wrap:
 .headshot img {
   display: block;
   width: 100%;
+  max-width: 280px; /* adjust this number until it looks right */
   height: auto;
   border-radius: 50%;        /* circular portrait */
   object-fit: cover;
