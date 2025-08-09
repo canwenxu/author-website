@@ -13,16 +13,25 @@
 <body>
   <div class="shell">
     <header>
-  <div class="inner">
-    <a class="site-title" href="index.html">Bio</a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="bio.html" class="active">Bio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-    <main class="inner">
+<main class="inner">
+  <section class="bio-grid">
+    <figure class="headshot">
+      <!-- Put your headshot file in the repo root as headshot.jpg (or update the filename below) -->
+      <img
+        src="headshot.jpg"
+        alt="Author headshot of Your Name"
+        width="800" height="1000"
+        loading="lazy"
+        srcset="
+          headshot-400.jpg 400w,
+          headshot-600.jpg 600w,
+          headshot-800.jpg 800w,
+          headshot-1200.jpg 1200w"
+        sizes="(min-width: 900px) 320px, 60vw"
+      >
+      <!-- Optional: photo credit -->
+      <!-- <figcaption>Photo: Jane Doe</figcaption> -->
+    </figure>
     
 <h1>Bio</h1>
 <p>Canwen Xu is a debut author whose writing has appeared in The Washington Post, The Kansas City Star, Chalkbeat, Areo Magazine, and more. She is a graduate of Columbia University.</p>
