@@ -100,6 +100,33 @@ footer .inner{ display:flex; justify-content:space-between; gap:16px; flex-wrap:
 }
 .buttons a.pre-order:hover { opacity: 0.92; }
 
+.region-links {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.region-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-right: 4px;
+}
+.region-links a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--fg);
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--accent);
+  transition: background .15s ease, color .15s ease;
+}
+.region-links a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 /* Bio layout */
 .bio-grid {
   display: grid;
